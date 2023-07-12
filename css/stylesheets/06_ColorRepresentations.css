@@ -1,0 +1,11 @@
+body {
+  background-color: lightgray;
+}
+
+p {
+  border: 5px solid rgb(185, 149, 223);
+}
+
+h3 {
+  background-color: #e4ad4e;
+}

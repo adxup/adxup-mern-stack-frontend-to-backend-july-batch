@@ -1,0 +1,46 @@
+body {
+  background-color: #eaecee;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2df7ae;
+}
+
+h3 {
+  color: #7a2;
+}
+
+/* class */
+#makeHeading {
+  text-align: right;
+  background-color: #6ad;
+  border: 5px dotted #f5ed;
+}
+
+/* selector: html element name, class name, id name */
+.bestPractices {
+  color: red;
+  border: 1px solid #000;
+}
+
+/* id */
+#head3 {
+  border: 2px solid rgb(154, 187, 128);
+}
+
+/* #makeHeading {
+  background-color: #6ad;
+  border: 5px dotted #f5ed;
+} */
+
+.spaceMore {
+  color: blue;
+  padding: 10px;
+}

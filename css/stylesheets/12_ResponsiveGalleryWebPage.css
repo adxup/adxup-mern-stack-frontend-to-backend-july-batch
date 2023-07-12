@@ -1,0 +1,28 @@
+body {
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  float: left;
+  opacity: 0.3;
+}
+
+.gallery-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-item:hover {
+  opacity: 1;
+}

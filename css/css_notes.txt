@@ -1,0 +1,30 @@
+-> what is the css?
+-> how to css
+    1. inline
+    2. embedded
+    3. external
+
+-> comment
+    1. single - // .................
+    2. multi - /* ........... */
+
+-> color: 256
+    1. name: red, violet etc.,
+    2. numerical: rgb(0, 0, 0)
+    rgb(255, 255, 255)
+    rgb(123, 173, 87)
+    3. hexadecimal: 
+    0 - 9; a - f; A - F;
+    #adf (3)
+    #367
+    #d3a7 (4)
+    #f3a7d2 (6)
+
+-> custom styling:
+    1. class
+    2. id
+
+-> Display and Position Property
+-> Creating the Hover Effects to Images with Transform and Transition Properties
+-> Creating the Dropdown Navigation
+-> Creating the Responsive Gallery Showcase or WebPage
