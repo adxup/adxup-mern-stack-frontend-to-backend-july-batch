@@ -28,3 +28,34 @@
 -> Creating the Hover Effects to Images with Transform and Transition Properties
 -> Creating the Dropdown Navigation
 -> Creating the Responsive Gallery Showcase or WebPage
+-> Creating Responsive Content
+
+-> Advance Concepts of CSS:
+    1. KeyFrames
+    2. Media Queries
+    3. Variables
+
+-> BEM: 
+    - Block Element and Modifier
+    - It is a Naming Convention
+
+    eg., Search Box
+        <div class="search_box">
+        <form class="search">
+            <input class="search_item" />
+            <button class="search_icon"></button>
+        </form>
+        </div>
+
+        syntax: [block]__[element]--[modifier]
+        
+    Block:
+        .content {}, .menu {}, .search-form {}
+
+    Element: 
+        .content__article {}, .menu__item {}, .search-form__input {}
+
+    Modifier: 
+        .content__article--featured {}, .menu__item--link {}, .search-form__input--icon {}
+
+

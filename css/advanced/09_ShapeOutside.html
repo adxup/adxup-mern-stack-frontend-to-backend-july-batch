@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+      }
+
+      .shape-outside {
+        width: 50%;
+        padding-right: 10px;
+      }
+
+      .shape-outside__circle {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-color: #467448;
+        margin: 25px 25px 5px 0px; /* top right bottom left */
+        float: right;
+        shape-outside: circle();
+      }
+    </style>
+  </head>
+  <body>
+    <section class="shape-outside">
+      <div class="shape-outside__circle"></div>
+      <h2>Shape Outside CSS Property</h2>
+      <p>Shp Out</p>
+    </section>
+  </body>
+</html>

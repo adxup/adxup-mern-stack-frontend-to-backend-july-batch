@@ -1,0 +1,50 @@
+* {
+  margin: 0px auto;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.content {
+  width: 992px;
+  background-color: #235;
+  color: #fff;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+  .content {
+    width: 100%;
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .content {
+    width: 80%;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    width: 60%;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    width: 40%;
+    font-size: 20px;
+  }
+}

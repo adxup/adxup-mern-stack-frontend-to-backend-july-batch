@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --p-text-color: blue;
+        --font-family: "Arial";
+        --input-bg-color: black;
+      }
+
+      input:read-only {
+        background-color: grey;
+      }
+
+      :required {
+        background-color: red;
+      }
+
+      p {
+        color: var(--p-text-color);
+        background-color: var(--input-bg-color);
+        font-size: 18px;
+      }
+
+      .content {
+        color: var(--p-text-color);
+      }
+
+      h1 {
+        color: var(--p-text-color);
+        font-family: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" value="check my content" readonly />
+      <input type="text" value="" required />
+      <p>
+        Over the years of developing websites for clients, I’ve learned that the
+        age-old adage, “If you want it done right, you gotta do it yourself,”
+        can be a two-way street.
+      </p>
+
+      <p class="content">
+        Of course, there are companies out there that have great web writers
+        internally, but most don’t. And the thought of a company turning a great
+        website content strategy (that we slaved over) into an ineffective
+        “brochure site” gives me heartburn. But sometimes you have to pick your
+        battles.
+      </p>
+    </div>
+  </body>
+</html>
