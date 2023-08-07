@@ -1,1 +1,1 @@
-# adxup-mern-stack-july-batch
+#skillxup-mern-stack-july-batch
