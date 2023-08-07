@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        let arr1 = [76, 43, -75, 23.87, -64.46, 35]; // length: 6
+        //  [ 0,   1,    2,      3,         4,    5]
+
+        // finding the length of the array
+        document.write(`the no of items: ${arr1.length} <br />`);
+
+        // accessing all the items / values / elements
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        // accessing the particular item of an array
+        document.write(`the items of arr1[2]: ${arr1[2]} <br />`);
+        document.write(`the items of arr1[4]: ${arr1[4]} <br />`);
+
+        // modifying elements
+        arr1[2] = 5;
+        document.write(`the items of arr1[2]: ${arr1[2]} <br />`);
+
+        // builtin methods of array
+        // push(), pop(), unshift(), shift(), splice()
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        arr1.push(38);
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        arr1.pop();
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        arr1.unshift(0);
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        arr1.shift();
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        let arr2 = [76, 43, -75, 23.87, -64.46, 35]; // length: 6
+        let delItems = arr2.splice(2, 5);
+        document.write(`the delItems: ${delItems} <br />`);
+        document.write(`the items of arr2: ${arr2} <br />`);
+
+        // for (let i = 0; i < arr1.length; i++) {
+        //   document.write(`the item[${i}]: ${arr1[i]} <br />`);
+        // }
+      </script>
+    </div>
+  </body>
+</html>

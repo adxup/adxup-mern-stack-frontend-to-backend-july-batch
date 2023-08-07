@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="desg"></div>
+      <script>
+        // initiate or call for actions
+        // bodmas
+        // declare the required variables
+        let num1 = 5;
+        let num2 = 8;
+
+        let res = null;
+        document.write(`the value of num1: ${num1} <br />`);
+        document.write(`the value of num2: ${num2} <br />`);
+
+        // arithmatic
+        // 1. binary: +, -, *, /, %, ^
+        res = num1 * num2;
+        document.write(`the value of res: ${res} <br />`);
+
+        // 2. unary: ++, --
+        document.write(`the value of num1: ${num1} <br />`);
+        ++num1;
+
+        // ++num1; num1 = 1 + num1;
+        // num1++; num1 = num1 + 1
+        res = num1++ * num2 * 3;
+        document.write(`the value of num1: ${res} <br />`);
+        document.write(`the value of num1: ${num1} <br />`);
+
+        document.write(`the value of num2: ${num2} <br />`);
+
+        // assignment operators: +=, -=, *=, /=, %=
+        res = num1 += num2; // num1 = num1 + num2
+        document.write(`the value of res: ${res} <br />`);
+        document.write(`the value of num1: ${num1} <br />`);
+
+        // comparison (relational) operators: >, <, >=, <=, ==, !=, ===, !==
+        let x = "5";
+        let y = 5;
+        let z = 5.0;
+
+        document.write(
+          `the value of x: ${x} and its datatype: ${typeof x} <br />`
+        );
+        document.write(
+          `the value of x: ${y} and its datatype: ${typeof y} <br />`
+        );
+        document.write(
+          `the value of x: ${z} and its datatype: ${typeof z} <br />`
+        );
+
+        res = x >= y;
+        document.write(`the value of res: ${res} <br />`);
+
+        res = z === x;
+        document.write(`the value of res: ${res} <br />`);
+
+        // conditional (ternary) operators: () ? ... : ...
+        res =
+          x > y
+            ? "the value of x is greater than the value of y"
+            : "the value of x is not greater than the value of y";
+
+        document.write(`the value of res: ${res} <br />`);
+
+        // logical operators: &&, ||, !
+        res = x > y && y <= z;
+        document.write(`the value of res: ${res} <br />`);
+
+        res = x > y || y <= z;
+        document.write(`the value of res: ${res} <br />`);
+
+        res = !(x > y && y <= z);
+        document.write(`the value of res: ${res} <br />`);
+
+        res = !(x > y || y <= z);
+        document.write(`the value of res: ${res} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

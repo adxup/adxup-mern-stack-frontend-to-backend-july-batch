@@ -1,0 +1,78 @@
+-> What is Javascript?
+    - Javascript is an Open Source Scripting / Programming Language
+    - It is used to Create the More Interactive to the Web Pages
+
+-> How to Start with Javascript?
+-> Display the Data
+    - Data Types:
+        1. Primitive Data Types
+            1. Number: 0 - 9; 653, -356, 465.433, 46e643
+            2. String: a - z; A - Z; 0 - 9; all Symbols: `~!@#$%^&*()_-+={}[];:'"<>.,?/|\ - '  ... ' / " ... " / ` ... ` 
+            3. Boolean: true or false
+
+        2. Non Primitive Data Types
+            1. Array
+            2. Function
+            3. Class and Object
+            4. Module
+
+        3. Misc Data Types
+            1. Undefined
+            2. Null
+
+-> To Display the Data
+    - Three different ways:
+        1. document.write(....);
+        2. dialog boxes:
+            1. alert()
+            2. confirm()
+            3. prompt()
+        3. debug
+            1. console.log(....)
+            2. console.warn(...)
+            3. console.error(...)
+
+-> Escape Characters:
+    \a, \b, \s, \w, \d, \', \",
+
+    \', \", \., \@, 
+
+-> Identifiers
+    1. Every Identifier should start with either a - z, A - Z, _
+    2. From 2nd Character onwards., it can be a - z, A - Z, 0 - 9, _
+    3. No special symbols except _
+    4. No spaces
+    5. Combination of lowercase & uppercase of alphabets
+
+    eg., fullname, FULLNAME, fullName, full_name, num1, n1, _num, 
+
+-> Keywords
+    - BuiltIn words / Reserved words
+    - It's a pre defined word which have some functionality to do
+
+    eg., let, async, try, for, while, if, catch
+
+-> Comments:
+    1. Single line 
+    2. Multi line 
+
+-> Declaring the Variables
+-> Variable:
+    - a Variable is a Name, which is used to store the value / data, that can be accessed / modified at any point of time / n no of times
+
+    - to declare:
+        1. var 
+        2. let 
+        3. const
+
+-> Operators:
+    1. Arithmatic
+    2. Assignment 
+    3. Comparison (Relational)
+    4. Conditional (Ternary)
+    5. Logical 
+
+
+-> Statements:
+    1. Decision Making Statements: if, if else, if else if else, switch case
+    2. Loop Statements: while, for

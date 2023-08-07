@@ -1,0 +1,23 @@
+* {
+  margin: 0px auto;
+  font-family: inherit;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #e2e2e2;
+  line-height: 1.5em;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 992px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+}
