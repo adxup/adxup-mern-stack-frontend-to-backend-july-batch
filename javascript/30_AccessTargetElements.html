@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style>
+      div,
+      p,
+      a {
+        padding: 15px 30px;
+        display: block;
+        border: 1px solid #000;
+        background-color: #fef;
+      }
+    </style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="wrap">
+        DIV
+        <p id="hint">P<a href="#">A</a></p>
+      </div>
+      <script>
+        // initiate or call for actions
+        var div = document.getElementById("wrap");
+        div.onclick = function (event) {
+          setTimeout(() => {
+            alert(
+              `target: ${event.target.tagName}, and the tagName: ${this.tagName}`
+            );
+          }, 0);
+        };
+      </script>
+    </div>
+  </body>
+</html>

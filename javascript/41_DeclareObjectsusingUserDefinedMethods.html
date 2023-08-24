@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      function UserDetails(firstName, lastName) {
+        // setting the properties to the respective object's
+        this.firstName = firstName;
+        this.lastName = lastName;
+
+        // fetching the property values from the respective object's
+        this.getUserDetails = function () {
+          let res = `the firstName: ${firstName} and lastName: ${lastName} <br />`;
+          document.getElementById("showUser").innerHTML += res;
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showUser"></div>
+      <script>
+        // initiate or call for actions
+        // declaring the objects
+        let user1 = new UserDetails("john", "paul");
+        user1.getUserDetails();
+
+        let user2 = new UserDetails("adam", "david");
+        user2.getUserDetails();
+
+        let user3 = new UserDetails("steve", "james");
+        user3.getUserDetails();
+      </script>
+    </div>
+  </body>
+</html>

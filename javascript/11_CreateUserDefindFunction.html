@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      // function definition
+      function myFunc() {
+        document.write(`this is a function <br />`);
+      }
+
+      function calFunc() {
+        // local variable declaration
+        let res = num1 * num2;
+        document.write(`the res: ${res} <br />`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        // function call or declaring the function
+        // myFunc();
+
+        // global variable declarations
+        let num1 = 7;
+        let num2 = 5;
+
+        calFunc();
+
+        myFunc();
+      </script>
+    </div>
+  </body>
+</html>

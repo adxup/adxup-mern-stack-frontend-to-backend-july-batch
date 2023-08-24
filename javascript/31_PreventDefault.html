@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="http://www.google.com" id="google">google</a> <br />
+
+      <form method="post" action="process.php">
+        <input type="text" name="firstName" id="firstName" value="" /> <br />
+        <input type="submit" name="submit" value="submit" id="submitBtn" />
+      </form>
+
+      <script>
+        // initiate or call for actions
+        var a = document.getElementById("google");
+        a.addEventListener("click", function (event) {
+          event.preventDefault();
+        });
+
+        var btn = document.getElementById("submitBtn");
+        btn.addEventListener("click", function (event) {
+          var name = document.getElementById("firstName").value;
+          alert(
+            `sorry., ${name} the preventDefault() won't let you to Submit!!`
+          );
+          event.preventDefault();
+        });
+      </script>
+    </div>
+  </body>
+</html>

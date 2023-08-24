@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style>
+      #intro {
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      .highlight {
+        background-color: yellowgreen;
+      }
+    </style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="intro" style="color: red; font-size: 20px">
+        this is a para with an id intro and with inline styles
+      </p>
+
+      <p id="info" class="disabled">
+        this is a para with an id info and with class disabled
+      </p>
+      <script>
+        // initiate or call for actions
+        var elem = document.getElementById("intro");
+
+        // setting the style in js with inline methodology
+        elem.style.textAlign = "right";
+        elem.style.color = "purple";
+        elem.style.textDecoration = "line-through";
+
+        // access th styles or properties from the given selectors
+        document.write(`elem.style.textAlign: ${elem.style.textAlign} <br />`);
+        document.write(`elem.style.color: ${elem.style.color} <br />`);
+        document.write(
+          `elem.style.textDecoration: ${elem.style.textDecoration} <br />`
+        );
+
+        // className
+        elem.className = "noted";
+        elem.className += " highlight";
+
+        // classList
+        elem.classList.add("agile");
+        elem.classList.remove("noted");
+
+        elem.classList.toggle("aws");
+      </script>
+    </div>
+  </body>
+</html>

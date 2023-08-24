@@ -52,14 +52,89 @@
         arr1.shift();
         document.write(`the items of arr1: ${arr1} <br />`);
 
-        let arr2 = [76, 43, -75, 23.87, -64.46, 35]; // length: 6
-        let delItems = arr2.splice(2, 5);
-        document.write(`the delItems: ${delItems} <br />`);
-        document.write(`the items of arr2: ${arr2} <br />`);
+        for (let i = 0; i < arr1.length; i++) {
+          document.write(`the item[${i}]: ${arr1[i]} <br />`);
+        }
 
-        // for (let i = 0; i < arr1.length; i++) {
-        //   document.write(`the item[${i}]: ${arr1[i]} <br />`);
-        // }
+        document.write(`the items of arr1: ${arr1} <br />`);
+        let res = arr1.splice(0, 3);
+        document.write(`the res: ${res} <br />`);
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        arr1.forEach((element) => {
+          document.write(`the picked value: ${element} <br />`);
+        });
+
+        arr1 = [93, 13, 43, -75, 23.87, -64.46, 35]; // length: 6
+
+        // searching and filtering
+        // indexOf(), lastIndexOf(), find(), filter()
+        document.write(`arr1.indexOf(2): ${arr1.indexOf(-43)} <br />`);
+
+        document.write(
+          `arr1.find(): ${arr1.find((element) => element)} <br />`
+        );
+
+        document.write(`arr1.map(): ${arr1.map((element) => element)} <br />`);
+
+        document.write(
+          `arr1.filter(): ${arr1.filter((element) => element % 2 === 0)} <br />`
+        );
+
+        // sorting and reversing
+        arr1 = [93, 13, 43, -75, 23.87, -64.46, 35]; // length: 6
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        res = arr1.sort();
+        document.write(`the items of res: ${res} <br />`);
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        arr1 = [93, 13, 43, -75, 23.87, -64.46, 35]; // length: 6
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        res = arr1.reverse();
+        document.write(`the items of res: ${res} <br />`);
+        document.write(`the items of arr1: ${arr1} <br />`);
+
+        // multi dimensional array
+        let multiArray = [
+          [1, 2],
+          [3, 4],
+          [5, 6],
+        ];
+
+        document.write(`list of items of multiArray: ${multiArray} <br />`);
+        document.write(
+          `list of items of multiArray[0]: ${multiArray[0]} <br />`
+        );
+
+        document.write(
+          `list of items of multiArray[2]: ${multiArray[2]} <br />`
+        );
+
+        document.write(
+          `list of items of multiArray[0][1]: ${multiArray[0][1]} <br />`
+        );
+
+        // array destructing
+        let myArray = ["john", "paul", "david", "smith"];
+        document.write(`the items: ${myArray} <br />`);
+
+        let [firstName, middleName, lastName] = myArray;
+        document.write(`the firstName: ${firstName} <br />`);
+        document.write(`the middleName: ${middleName} <br />`);
+        document.write(`the lastName: ${lastName} <br />`);
+
+        let userData = [142, "john", "john@gmail.com", "+(432) 255 3578"];
+        document.write(`the items of userData: ${userData} <br />`);
+
+        let [userId, userName, userEmail, userMobile] = userData;
+        document.write(`userEmail: ${userEmail} <br />`);
+
+        // array spread operator (...) - used to create copies of arrays, concatenate arrays, pass array elements as arguments
+
+        let myArray2 = [...myArray];
+        document.write(`the items of myArray2: ${myArray2} <br />`);
       </script>
     </div>
   </body>

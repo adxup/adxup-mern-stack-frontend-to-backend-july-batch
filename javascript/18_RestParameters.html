@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      function sum(...nums) {
+        return nums.reduce((total, num) => total + num, 0);
+      }
+
+      function user(...data) {
+        return `data: ${data}`;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        let total = sum(1, 2, 3, 4);
+        document.write(`total: ${total} <br />`);
+
+        total = sum(1, 7);
+        document.write(`total: ${total} <br />`);
+
+        let userData = user(63, "john", "john@gmail.com", "+(521) 452 5732");
+        document.write(userData);
+
+        userData = user(63, "john");
+        document.write(userData);
+      </script>
+    </div>
+  </body>
+</html>

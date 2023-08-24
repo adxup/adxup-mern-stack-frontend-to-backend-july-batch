@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      function myFunc() {
+        document.getElementById(
+          "myFuncOutput"
+        ).innerHTML = `this is a result of myFunc`;
+      }
+
+      function myFunc2() {
+        document.getElementById(
+          "myFuncOutput2"
+        ).innerHTML = `this is a result of myFunc2`;
+      }
+
+      function setHover() {
+        document.getElementById("myBtn2").style.backgroundColor = "red";
+        document.getElementById("myBtn2").style.color = "white";
+      }
+
+      function myFunc3() {
+        document.getElementById(
+          "myFuncOutput3"
+        ).innerHTML = `this is a result of myFunc3`;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button type="button" onclick="myFunc()">click on Btn1</button>
+      <button type="button" id="myBtn2">click on Btn2</button>
+      <button type="button" id="myBtn3">take an action with Btn3</button>
+
+      <div id="myFuncOutput"></div>
+      <div id="myFuncOutput2"></div>
+      <div id="myFuncOutput3"></div>
+
+      <script>
+        // initiate or call for actions
+        var btn2 = document.getElementById("myBtn2");
+        btn2.onclick = myFunc2;
+        btn2.onmouseover = setHover;
+
+        var btn3 = document.getElementById("myBtn3");
+        btn3.addEventListener("click", myFunc3);
+      </script>
+    </div>
+  </body>
+</html>

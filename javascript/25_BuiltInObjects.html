@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        // window object
+        document.write(
+          `the window width: ${window.innerWidth} and height: ${window.innerHeight} <br />`
+        );
+
+        document.write(
+          `the window width: ${document.documentElement.clientWidth} and height: ${document.documentElement.clientHeight} <br />`
+        );
+
+        // screen object
+        document.write(
+          `the screen width: ${screen.width} and height: ${screen.height} <br />`
+        );
+
+        document.write(
+          `the screen width: ${screen.availWidth} and height: ${screen.availHeight} <br />`
+        );
+
+        // location object
+        document.write(`href: ${window.location.href} <br />`);
+        document.write(`protocol: ${window.location.protocol} <br />`);
+        document.write(`host: ${window.location.host} <br />`);
+        document.write(`hostname: ${window.location.hostname} <br />`);
+        document.write(`portno: ${window.location.port} <br />`);
+
+        // loading documents
+        // window.location.assign("http://www.amazon.com");
+        window.location.replace("http://linkedin.com");
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      // global variables
+      var getValue, setValue;
+
+      (function () {
+        var secret = 0;
+
+        // getter function
+        getValue = function () {
+          return secret;
+        };
+
+        // setter function
+        setValue = function (x) {
+          secret = x;
+        };
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        console.log(`getValue: ${getValue()}`);
+        setValue(5);
+        console.log(`getValue: ${getValue()}`);
+      </script>
+    </div>
+  </body>
+</html>

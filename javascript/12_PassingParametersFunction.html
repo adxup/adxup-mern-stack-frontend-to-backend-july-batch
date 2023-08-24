@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      // accessing arguments at function definition
+      function doCalc(n1, n2) {
+        let n3 = n1 / n2;
+        document.write(`the division of 2 nums: ${n3} <br />`);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        let num1 = 5;
+        let num2 = 8;
+
+        // passing parameters to function
+        doCalc(num1, num2);
+
+        num1 = 7.2;
+        num2 = 3.8;
+
+        doCalc(num1, num2);
+      </script>
+    </div>
+  </body>
+</html>

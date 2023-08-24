@@ -76,3 +76,59 @@
 -> Statements:
     1. Decision Making Statements: if, if else, if else if else, switch case
     2. Loop Statements: while, for
+
+-> Arrays:
+-> Functions:
+    - a function is a re usable set of statements
+
+    - basic function call and its definition
+    - passing parameters
+    - return statement
+    - anonymous function
+    - arrow function
+    - default arguments
+    - scope and closures
+        - closures occur when a function "remembers" the variables in its parent scope even after the parent function has finished executng
+    - rest parameters
+    - call back function
+    - higher order function
+        - higher order functions are functions that either take one or more functions as arguments or return a function
+
+-> dom:
+    - dom stands for document object model
+    - create a new element(s) / remove 
+    - can set or read the data from the element
+    - set the styles / remove the styles
+
+    - dom selectors
+    - styling dom elements
+
+    - get and set attributes
+
+    - builtin objects
+    - setTimeout and setInterval
+    - date and time object
+    - event listeners
+
+    - capturing and bubbling phases
+    - access target element
+    - preventdefault
+    - borrowing methods: call and apply
+    - hoisting
+    - getter and setter methods
+    - use strict
+    - json
+    - exception handling: try, catch, throw
+    - regular expressions
+    - form validation
+    
+    - ecma script features
+
+- object oriented programming
+    - declaring the objects
+    - defining the class
+    - add / remove set of properties and methods
+
+    - rest parameters
+    - spread operators
+    

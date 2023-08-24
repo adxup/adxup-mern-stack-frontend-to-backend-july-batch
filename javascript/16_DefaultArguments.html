@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style>
+      #showUser {
+        border: 1px solid #000;
+        border-radius: 3px;
+        width: 350px;
+        padding: 5px;
+      }
+    </style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      function userData(
+        userId = 522,
+        userName = "demo",
+        userEmail = "demo@gmail.com",
+        userMobile = "+(478) 678 5672"
+      ) {
+        let userRecord = `
+            User Data <br />
+            --------------------------------- <br />
+            User Id: ${userId} <br />
+            User Name: ${userName} <br />
+            User Email: ${userEmail} <br /> 
+            User Mobile: ${userMobile} <br />
+        `;
+
+        document.getElementById("showUser").innerHTML += userRecord;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showUser"></div>
+      <script>
+        // initiate or call for actions
+        let userId = 63;
+        let userName = "john";
+        let userEmail = "john@gmail.com";
+        let userMobile = "+(654) 435 4589";
+
+        userData(userId, userName, userEmail, userMobile);
+        userData(userId, userName);
+        userData(userId, userName, userEmail);
+        userData();
+      </script>
+    </div>
+  </body>
+</html>

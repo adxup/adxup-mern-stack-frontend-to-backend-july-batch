@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      // person class
+      class Person {
+        constructor(pId, pName, pEmail, pMobile) {
+          this.pId = pId;
+          this.pName = pName;
+          this.pEmail = pEmail;
+          this.pMobile = pMobile;
+        }
+      }
+
+      // employee class
+      class Employee extends Person {
+        constructor(pId, pName, pEmail, pMobile, eDesg, eSalary) {
+          super(pId, pName, pEmail, pMobile);
+          this.eDesg = eDesg;
+          this.eSalary = eSalary;
+        }
+
+        getEmp() {
+          let empRec = ` <br />
+                Person Details <br />
+                -------------------------- <br />
+                PersonId: ${this.pId} <br />
+                PersonName: ${this.pName} <br />
+                PersonEmail: ${this.pEmail} <br />
+                PersonMobile: ${this.pMobile} <br />
+                
+                Employee Details <br />
+                -------------------------- <br />
+                EmployeeDesignation: ${this.eDesg} <br />
+                EmployeeSalary: ${this.eSalary} <br />
+            `;
+
+          document.getElementById("showEmp").innerHTML += empRec;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showEmp"></div>
+      <script>
+        // initiate or call for actions
+        let emp1 = new Employee(
+          452,
+          "john",
+          "john@gmail.com",
+          "+(374) 873 4683",
+          "HR",
+          "$7842"
+        );
+
+        emp1.getEmp();
+
+        let emp2 = new Employee(
+          753,
+          "paul",
+          "paul@gmail.com",
+          "+(543) 290 2548",
+          "CTO",
+          "$145842"
+        );
+
+        emp2.getEmp();
+      </script>
+    </div>
+  </body>
+</html>

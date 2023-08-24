@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      var user = {
+        userId: 63,
+        userName: "john",
+      };
+
+      var objA = {
+        name: "object A",
+
+        sayHello: function (name) {
+          alert(`name: ${name}`);
+        },
+      };
+
+      var objB = {
+        name: "object B",
+      };
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        document.write(`user object details: `);
+        document.write(user.userId);
+
+        // call
+        // objA.sayHello.call(objB, "david", "paul");
+
+        // apply
+        objA.sayHello.apply(objB, ["paul", "david"]);
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p id="mark">this is a para with an id mark</p>
+      <p>this is another para</p>
+
+      <p class="test">this is a para with a class test</p>
+      <p id="mark">this is a para with an id mark</p>
+
+      <p class="test block">this is a para with a class test and block</p>
+
+      <p>this is another para</p>
+      <p id="mark">this is a para with an id mark</p>
+      <ul>
+        <li>home</li>
+        <li>about us</li>
+        <li>services</li>
+        <li>portfolio</li>
+        <li>contact us</li>
+      </ul>
+      <script>
+        // initiate or call for actions
+        // apply the style to body element
+        document.body.style.backgroundColor = "lightcoral";
+
+        // selecting element by id
+        var match = document.getElementById("mark");
+        match.style.backgroundColor = "lightblue";
+        document.write(match.innerHTML);
+        document.write(`<br />`);
+
+        // selecting element by class
+        var matches = document.getElementsByClassName("test");
+        document.write(`the no of selected elements: ${matches.length} <br />`);
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.color = "red";
+        }
+
+        // selecting element by tagname
+        var matches = document.getElementsByTagName("p");
+        document.write(`the no of selected elements: ${matches.length} <br />`);
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "yellow";
+          matches[i].style.textDecoration = "underline";
+        }
+
+        // querySelectorAll
+        var matches = document.querySelectorAll("p#mark");
+        document.write(`the no of selected elements: ${matches.length} <br />`);
+
+        for (let i = 0; i < matches.length; i++) {
+          matches[i].style.backgroundColor = "yellowgreen";
+          matches[i].style.textDecoration = "underline";
+        }
+      </script>
+    </div>
+  </body>
+</html>

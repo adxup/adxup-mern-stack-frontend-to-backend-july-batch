@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        var dt = new Date();
+        document.write(`the current Date: ${dt} <br />`);
+
+        // var dt = new Date("17 Aug 2023");
+        // document.write(`the current Date: ${dt} <br />`);
+
+        document.write(`getDate(): ${dt.getDate()} <br />`);
+        document.write(`getDay(): ${dt.getDay()} <br />`);
+
+        dt.setDate(dt.getDate() + 12);
+        document.write(`the current Date: ${dt} <br />`);
+      </script>
+    </div>
+  </body>
+</html>

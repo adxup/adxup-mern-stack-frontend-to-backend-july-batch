@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style>
+      .btnStyle {
+        color: #f00;
+      }
+    </style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="http://www.google.com" target="_blank" id="myLink"
+        >go to Google</a
+      >
+
+      <br />
+
+      <button type="button" id="myBtn">button with myBtn</button>
+
+      <br />
+
+      <a href="#" id="myLink1">it's my Link</a>
+
+      <br />
+
+      <script>
+        // initiate or call for actions
+        var aLink = document.getElementById("myLink");
+
+        var href = aLink.getAttribute("href");
+        document.write(`the value of href attribute: ${href} <br />`);
+
+        var id = aLink.getAttribute("id");
+        document.write(`the value of id attribute: ${id} <br />`);
+
+        var btn = document.getElementById("myBtn");
+        btn.setAttribute("class", "btnStyle");
+
+        aLink.removeAttribute("href");
+      </script>
+    </div>
+  </body>
+</html>

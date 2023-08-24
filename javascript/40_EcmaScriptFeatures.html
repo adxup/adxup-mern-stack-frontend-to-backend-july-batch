@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      function doAction(n1 = 1, n2 = 2) {
+        let res = n1 * n2;
+        document.write(`the res: ${res} <br />`);
+      }
+
+      let arrFunc = () => {
+        document.write(`this is an arrow function<br />`);
+      };
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <script>
+        // initiate or call for actions
+        // let
+        for (let i = 0; i < 5; i++) {
+          document.write(`the value of i: ${i} <br />`);
+        }
+
+        // const
+        const PI = 3.14168647373;
+        document.write(`the value of PI: ${PI} <br />`);
+
+        // const with an array
+        const nums = [45, -98, 35, 83, -942];
+        document.write(`the items of nums: ${nums} <br />`);
+
+        nums[2] = 77;
+        document.write(`the items of nums: ${nums} <br />`);
+
+        // const with object literal
+        const user = {
+          name: "john",
+          age: 25,
+        };
+
+        document.write(`the name of the user: ${user.name} <br />`);
+
+        // for ..of
+        let letters = ["a", "e", "i", "o", "u"];
+        for (let letter of letters) {
+          document.write(
+            `the each nd every letter from letters: ${letter} <br />`
+          );
+        }
+
+        // for ..in
+        for (let letter in letters) {
+          document.write(
+            `the each nd every letter: ${letter} from letters: ${letters[letter]} <br />`
+          );
+        }
+
+        // template string
+        let name = "john";
+        let age = 36;
+
+        document.write(`the name: ${name} and age: ${age} <br />`);
+
+        // default argument
+        doAction(3, 5);
+        doAction(7);
+
+        // arrow function
+        arrFunc();
+      </script>
+    </div>
+  </body>
+</html>
