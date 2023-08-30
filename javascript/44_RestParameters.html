@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      function sortNames(...names) {
+        let sortedRes = names.sort();
+        document.getElementById("sortedRes").innerHTML += sortedRes + `<br />`;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="sortedRes"></div>
+      <script>
+        // initiate or call for actions
+        sortNames("john", "adam", "peter");
+        sortNames("paul", "steve");
+        sortNames("david", "ricky", "micheal", "adam");
+      </script>
+    </div>
+  </body>
+</html>

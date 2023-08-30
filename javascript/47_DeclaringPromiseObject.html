@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      function displayValue(res) {
+        document.getElementById("showRes").innerHTML = res;
+      }
+      let count = true;
+
+      let countValue = new Promise(function (resolve, reject) {
+        if (count) {
+          resolve(`there is a count value as true`);
+        } else {
+          reject(`there is a count value as false`);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showRes"></div>
+
+      <script>
+        // initiate or call for actions
+        countValue.then(
+          function (value) {
+            displayValue(value);
+          },
+          function (error) {
+            displayValue(error);
+          }
+        );
+      </script>
+    </div>
+  </body>
+</html>

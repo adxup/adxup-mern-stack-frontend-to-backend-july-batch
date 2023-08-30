@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+
+    <!-- custom styling -->
+    <link rel="stylesheet" href="customStyles.css" />
+    <style></style>
+
+    <!-- custom script -->
+    <script src="customScripts.js"></script>
+    <script>
+      // executing the logics or program
+      let promiseObject = new Promise(function (resolve, reject) {
+        setTimeout(function () {
+          resolve("promise resolved");
+        }, 2000);
+      });
+
+      async function myFunc() {
+        let result = await promiseObject;
+        document.getElementById("showRes").innerHTML = result;
+      }
+
+      function myFunc2() {
+        let result = `this is myFun2`;
+        setTimeout(function () {
+          document.getElementById("showRes2").innerHTML = result;
+        }, 4000);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="showRes"></div>
+      <div id="showRes2"></div>
+      <script>
+        // initiate or call for actions
+        myFunc();
+
+        myFunc2();
+      </script>
+    </div>
+  </body>
+</html>
